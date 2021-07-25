@@ -78,7 +78,6 @@ public class LaunchReviewPlugin implements MethodCallHandler, FlutterPlugin, Act
                     // this make sure only the Google Play app is allowed to
                     // intercept the intent
                     rateIntent.setComponent(componentName);
-                    Toast.makeText(activity, "Please Rate Application", Toast.LENGTH_SHORT).show();
 
                     activity.startActivity(rateIntent);
                     marketFound = true;
